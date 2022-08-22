@@ -61,6 +61,7 @@ body{
     width: 100%;
 }
 
+/*Codigo*/
 header {
     display: flex;
     justify-content: space-between;
@@ -84,44 +85,7 @@ header {
     color: white;
 }
 
-.logo-presentation{
-    width: 6rem;
-    height: 6rem;
+.header-options__links:hover{
+    color: var(--secundarioClaro);
+    border-radius: 10%;
 }
-
-.scroll-presentation__img{
-    padding: 1rem 0;
-    width: 10rem;
-    height: 3rem;
-}
-
-.main-presentation {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(105, 48, 109, 0.8)), url("../img/header.jpg") no-repeat fixed;
-    height: 45rem;
-    padding: 2rem 2rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    color: var(--blanco);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    overflow: hidden;
-    color: white;
-}
-
-.header-border{
-    border: 3px solid black;
-}
-
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 90%;
-}
-
