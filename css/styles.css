@@ -40,6 +40,10 @@ h4{
 p{
     font-size: 2.8rem;
 }
+
+a{
+    font-size: 2.5rem;
+}
 /**Utilidades**/
 
 .no-margin{
@@ -71,9 +75,14 @@ header {
 
 .header-options{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 30rem;
 }
 
+.header-options__links{
+    border-bottom: 1px solid var(--secundarioClaro);
+    color: white;
+}
 
 .logo-presentation{
     width: 6rem;
