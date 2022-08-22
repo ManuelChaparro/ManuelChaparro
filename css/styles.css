@@ -1,0 +1,97 @@
+:root{
+    --principal: #0e103d;
+    --secundario: #69306d;
+    --secundarioClaro: #a5668b;
+    --blanco: #f2d7ee;
+    --gris: #d3bcc0;
+
+    --fuentePrincipal: 'Nunito', sans-serif;;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,*:before, *after {
+    box-sizing: inherit;
+}
+
+h1{
+    font-size: 4.5rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+h4{
+    font-size: 2.8rem;
+}
+
+/**Utilidades**/
+
+.no-margin{
+    margin: 0;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+body{
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 2;
+    max-width: 120rem;
+    width: 90%;
+    margin: 1rem auto auto auto;
+}
+
+header {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(105, 48, 109, 0.7)), url("../img/header.jpg") no-repeat fixed;
+    opacity: 0.4;
+    height: 50rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+    border: 10px solid black;
+
+}
+
+.header-container{
+    padding: 2rem 0 2rem 0;
+}
+
+.logo-header{
+    width: 4rem;
+    height: 4rem;
+}
+
+.scroll-header__img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.scroll-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container {
+
+}
