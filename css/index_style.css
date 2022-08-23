@@ -21,6 +21,10 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    color: var(--secundarioClaro);
+}
+
 h1{
     font-size: 4.5rem;
 }
@@ -56,6 +60,22 @@ a{
 
 .no-line-height{
     line-height: 3.5rem;
+}
+
+.bottom-line:nth-last-of-type(2n){
+    border-bottom: 2px solid var(--secundarioClaro);
+}
+
+.center-text{
+    text-align: center;
+}
+
+.justify-text{
+    text-align: justify;
+}
+
+.text-white{
+    color: white;
 }
 
 body{
@@ -118,7 +138,7 @@ header {
 
 .scroll-presentation__img{
     padding: 1rem 0;
-    width: 10rem;
+    width: 20rem;
     height: 3rem;
 }
 
@@ -154,8 +174,8 @@ main{
 .about-me{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    padding: 10% 5%;
+    gap: 10rem;
+    padding: 10% 0;
 }
 
 .about-me__personal{
@@ -167,6 +187,7 @@ main{
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1;
     align-items: center;
+    padding: 0 5%;
 }
 
 .personal-img{
@@ -182,6 +203,7 @@ main{
     grid-column: 2/3;
     grid-row: 1;
     width: 20%;
+    justify-self: center;
 }
 
 .personal-info{
@@ -191,11 +213,59 @@ main{
 
 }
 
-@media (max-width: 768px){
-    .header-title{
-        font-size: 0;
-    }
+.about-me__studies-uptc{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/studies_background_uptc.jpg") no-repeat fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    color: white;
+}
 
+.about-me__studies-platzi{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/studies_background_platzi.png") no-repeat fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    color: white;
+}
+
+.container-studies{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.studies-uptc{
+    display: flex;
+    height: 25rem;
+    gap: 4rem;
+}
+
+.studies-img{
+    height: 100%;
+    padding-right: 5%;
+    justify-self: center;
+}
+
+.studies-img_platzi{
+    height: 100%;
+    padding-left: 5%;
+    justify-self: center;
+}
+
+.studies-platzi{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+@media (max-width: 768px){
     h1{
         font-size: 3.5rem;
     }
@@ -219,6 +289,24 @@ main{
     a{
         font-size: 2.5rem;
     }
+
+    .header-title{
+        font-size: 0;
+    }
+
+    .about-me__personal{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .personal-img{
+        width: 50%;
+    }
+
+    .personal-arrow{
+        transform: rotate(90deg);
+    }
+
 
 }
 
@@ -250,3 +338,17 @@ main{
     to {left: 0px;}
 }
 
+.personal-arrow{
+    position: relative;
+    animation-name: anim-personal-arrow;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anim-personal-arrow {
+    0%   {background-color:transparent; left:0px; top:0px;}
+    33%  {background-color:transparent; left:20px; top:0px;}
+    66% {background-color:transparent; left:-20px; top:0px;}
+    100%  {background-color:transparent; left:0px; top:0px;}
+}
