@@ -72,17 +72,23 @@ header {
 }
 
 .header-logo{
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
 }
 
 .header-logo-container{
     display: flex;
     justify-content: space-around;
+    padding-right: 2rem;
+    border-right: 2px solid var(--secundarioClaro) ;
 }
 
 .title-logo{
     color: white;
+    text-align: center;
+    align-items: center;
+    display: flex;
+
 }
 
 .header-options{
@@ -114,7 +120,6 @@ header {
 
 .main-presentation {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(105, 48, 109, 0.8)), url("../img/header.jpg") no-repeat fixed;
-    height: 45rem;
     padding: 2rem 2rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -142,3 +147,61 @@ main{
     height: 90%;
 }
 
+@media (max-width: 768px){
+    .header-title{
+        font-size: 0;
+    }
+
+    h1{
+        font-size: 3.5rem;
+    }
+    
+    h2{
+        font-size: 3.2rem;
+    }
+    
+    h3 {
+        font-size: 3rem;
+    }
+    
+    h4{
+        font-size: 2.7rem;
+    }
+    
+    p{
+        font-size: 2.5rem;
+    }
+    
+    a{
+        font-size: 2.5rem;
+    }
+
+}
+
+
+/*Animations*/
+.animation-scroll{
+    position: relative;
+    animation-name: anim-scroll;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+.animation-t-scroll{
+    position: relative;
+    animation-name: anim-t-scroll;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes anim-t-scroll {
+    0%   {background-color:transparent; left:100%; top:0px;}
+    100% {background-color:transparent; left:0px; top:0px;}
+}
+
+@keyframes anim-scroll{
+    0%   {background-color:transparent; left:0px; top:0px;}
+    50%  {background-color:transparent; left:0px; top:10px;}
+    100% {background-color:transparent; left:0px; top:0px;}
+}
