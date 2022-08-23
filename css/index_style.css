@@ -107,6 +107,10 @@ header {
     border-right: 2px solid var(--secundarioClaro) ;
 }
 
+.title-presentation{
+    line-height: 5.5rem;
+}
+
 .title-logo{
     color: white;
     text-align: center;
@@ -174,7 +178,7 @@ main{
 .about-me{
     display: flex;
     flex-direction: column;
-    gap: 10rem;
+    gap: 5rem;
     padding: 10% 0;
 }
 
@@ -210,7 +214,7 @@ main{
     grid-column: 3/5;
     grid-row: 1;
     color: var(--principal);
-
+    padding: 0 10%;
 }
 
 .about-me__studies-uptc{
@@ -265,29 +269,43 @@ main{
     align-items: center;
 }
 
+.a-platzi{
+    transition: color 12s, font-size 12s;
+    border-bottom: 1px solid var(--secundarioClaro);
+    color: white;
+}
+
+.studies-title{
+    font-size: 5rem;
+}
+
 @media (max-width: 768px){
     h1{
-        font-size: 3.5rem;
-    }
-    
-    h2{
-        font-size: 3.2rem;
-    }
-    
-    h3 {
         font-size: 3rem;
     }
     
-    h4{
+    h2{
         font-size: 2.7rem;
     }
     
-    p{
+    h3 {
         font-size: 2.5rem;
     }
     
+    h4{
+        font-size: 2.3rem;
+    }
+    
+    p{
+        font-size: 2.2rem;
+    }
+    
     a{
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+    }
+
+    .title-presentation{
+        line-height: 4.5rem;
     }
 
     .header-title{
@@ -307,7 +325,13 @@ main{
         transform: rotate(90deg);
     }
 
+    .studies-img{
+        display: none;
+    }
 
+    .studies-img_platzi{
+        display: none;
+    }
 }
 
 
