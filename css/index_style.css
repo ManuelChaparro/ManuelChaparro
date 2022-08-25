@@ -26,27 +26,31 @@ a:hover{
 }
 
 h1{
-    font-size: 4.5rem;
-}
-
-h2{
     font-size: 4rem;
 }
 
+h2{
+    font-size: 3.5rem;
+}
+
 h3 {
-    font-size: 3.2rem;
+    font-size: 3rem;
 }
 
 h4{
-    font-size: 2.8rem;
+    font-size: 2.7rem;
 }
 
 p{
-    font-size: 2.8rem;
+    font-size: 2.5rem;
 }
 
 a{
-    font-size: 2.5rem;
+    font-size: 2.3rem;
+}
+
+li{
+    font-size: 2.3rem;
 }
 /**Utilidades**/
 
@@ -238,38 +242,61 @@ main{
     color: white;
 }
 
+.about-me__studies-mintic{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/studies_background_mintic.png") no-repeat fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    color: white;
+}
+
 .container-studies{
     display: flex;
     flex-direction: column;
     gap: 5rem;
 }
 
-.studies-uptc{
-    display: flex;
-    height: 25rem;
-    gap: 4rem;
-}
-
 .studies-img{
-    height: 100%;
-    padding-right: 5%;
-    justify-self: center;
+    object-fit: contain;
+    object-position: center center;
+    width: 100%;
+    max-height: 100%;
 }
 
 .studies-img_platzi{
-    height: 100%;
-    padding-left: 5%;
-    justify-self: center;
+    object-fit: contain;
+    object-position: center center;
+    width: 100%;
+    max-height: 100%;
+}
+
+.studies-img_mintic{
+    object-fit: contain;
+    object-position: center center;
+    width: 100%;
+    max-height: 100%;
+}
+
+.studies-uptc{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 4rem;  
+    align-items: center;
+    padding-left: 2%;
 }
 
 .studies-platzi{
-    display: flex;
-    gap: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 4rem;  
     align-items: center;
+    padding-left: 2%;
 }
 
 .a-platzi{
-    transition: color 12s, font-size 12s;
     border-bottom: 1px solid var(--secundarioClaro);
     color: white;
 }
@@ -277,6 +304,27 @@ main{
 .studies-title{
     font-size: 5rem;
 }
+
+.studies-mintic{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 4rem;  
+    align-items: center;
+    padding-left: 2%;
+}
+
+.studies-uptc-title{
+    color: #FFCB05;
+}
+
+.studies-mintic-title{
+    color: #FC0763;
+}
+
+.studies-platzi-title{
+    color: #98CA3F;
+}
+
 
 @media (max-width: 768px){
     h1{
@@ -320,6 +368,21 @@ main{
         width: 50%;
     }
 
+    .studies-uptc{
+        display: flex;
+        padding: 0;
+    }
+
+    .studies-platzi{
+        display: flex;
+        padding: 0;
+    }
+
+    .studies-mintic{
+        display: flex;
+        padding: 0;
+    }
+
     .personal-arrow{
         transform: rotate(90deg);
     }
@@ -329,6 +392,10 @@ main{
     }
 
     .studies-img_platzi{
+        display: none;
+    }
+
+    .studies-img_mintic{
         display: none;
     }
 }
