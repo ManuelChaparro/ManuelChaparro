@@ -147,8 +147,10 @@ header {
 }
 
 .main-presentation {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(105, 48, 109, 0.8)), url("../img/header.png") no-repeat fixed;
+    background-color: #F2D7EE;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(105, 48, 109, 0.8)), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%2369306d' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%230e103d' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23773f74' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%235f5566' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23844a7a' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23867882' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23905580' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23a4929a' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%239b5e86' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23bda8ae' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23a5668b' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23d3bcc0' points='943 900 1210 900 971 687'/%3E%3C/svg%3E") no-repeat fixed;
     padding: 2rem 2rem;
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -160,6 +162,7 @@ header {
     text-align: center;
     overflow: hidden;
     color: white;
+    height: 47rem;
 }
 
 .header-border{
@@ -253,6 +256,7 @@ main{
     display: flex;
     flex-direction: column;
     gap: 5rem;
+    border-top: 2px solid var(--gris);
 }
 
 .studies-img{
@@ -344,15 +348,17 @@ main{
 }
 
 .technologies-container__info{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
 }
 
 .tech__info{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 5rem;
+
 }
 
 
@@ -472,3 +478,8 @@ main{
     66% {background-color:transparent; left:-20px; top:0px;}
     100%  {background-color:transparent; left:0px; top:0px;}
 }
+
+
+
+
+
