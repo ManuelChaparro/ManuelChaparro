@@ -88,6 +88,9 @@ body{
 /*Codigo*/
 
 header {
+    position: -webkit-sticky;  
+    position: sticky;
+    top: 0; 
     display: flex;
     justify-content: space-between;
     height: 5rem;
@@ -535,51 +538,3 @@ progress::-webkit-progress-bar{
     
     }
 }
-
-
-/*Animations*/
-.animation-scroll{
-    position: relative;
-    animation-name: anim-scroll;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
-}
-
-@keyframes anim-scroll{
-    0%   {background-color:transparent; left:0px; top:0px;}
-    50%  {background-color:transparent; left:0px; top:10px;}
-    100% {background-color:transparent; left:0px; top:0px;}
-}
-
-.animation-t-scroll{
-    position: relative;
-    animation-name: anim-t-scroll;
-    animation-duration: 4s;
-    animation-timing-function: ease-in-out;
-}
-
-@keyframes anim-t-scroll {
-    from {left: 100%;} 
-    to {left: 0px;}
-}
-
-.personal-arrow{
-    position: relative;
-    animation-name: anim-personal-arrow;
-    animation-duration: 4s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-}
-
-@keyframes anim-personal-arrow {
-    0%   {background-color:transparent; left:0px; top:0px;}
-    33%  {background-color:transparent; left:20px; top:0px;}
-    66% {background-color:transparent; left:-20px; top:0px;}
-    100%  {background-color:transparent; left:0px; top:0px;}
-}
-
-
-
-
-
