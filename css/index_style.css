@@ -328,9 +328,11 @@ main{
 }
 
 .technologies-container{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
     padding: 0 5%;
+    gap: 2rem;
 }
 
 .about-me__technologies{
@@ -348,19 +350,99 @@ main{
 }
 
 .technologies-container__info{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-items: center;
+
 }
 
 .tech__info{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
     align-items: center;
-    justify-content: space-between;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
 
 }
 
+.tech__info h1{
+    justify-self: center;
+    font-size: 2.7rem;
+    margin: 0;
+}
+
+.tech__info h3{
+    justify-self: end;
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.tech__info progress{
+    background-color: white;
+}
+
+progress{
+    align-self: center;
+    justify-self: center;   
+    width: 100%;
+    height: 2rem;
+    padding: 0 1rem;
+}
+
+progress::-webkit-progress-value{
+    background-color: var(--secundarioClaro);
+}
+
+progress::-webkit-progress-bar{
+    border-radius: 5px;
+    background-color: rgb(51,51,51);
+    border: 3px solid rgb(51,51,51);
+}
+
+.technologies-container__info ul{
+    padding: 0;
+}
+
+#good-bar::-webkit-progress-value{
+    border-radius: 5px;
+    background-color: #77dd77;
+}
+
+.good-per{
+    color: #77dd77;
+    text-shadow: -1px 1px 0 rgb(51,51,51),
+    1px 1px 0 rgb(51,51,51),
+    1px -1px 0 rgb(51,51,51),
+    -1px -1px 0 rgb(51,51,51);
+}
+
+#mid-bar::-webkit-progress-value{
+    border-radius: 5px;
+    background-color: #fdfd96;
+}
+
+.mid-per{
+    color: #fdfd96;
+    text-shadow: -1px 1px 0 rgb(51,51,51),
+    1px 1px 0 rgb(51,51,51),
+    1px -1px 0 rgb(51,51,51),
+    -1px -1px 0 rgb(51,51,51);
+}
+
+#low-bar::-webkit-progress-value{
+    border-radius: 5px;
+    background-color: #fdcae1;
+}
+
+.low-per{
+    color: #fdcae1;
+    text-shadow: -1px 1px 0 rgb(51,51,51),
+    1px 1px 0 rgb(51,51,51),
+    1px -1px 0 rgb(51,51,51),
+    -1px -1px 0 rgb(51,51,51);
+}
 
 @media (max-width: 768px){
     h1{
