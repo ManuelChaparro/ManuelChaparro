@@ -63,7 +63,7 @@ li{
 }
 
 .no-line-height{
-    line-height: 3.5rem;
+    line-height: 2.5rem;
 }
 
 .center-text{
@@ -219,7 +219,6 @@ main{
     grid-column: 3/5;
     grid-row: 1;
     color: var(--principal);
-    padding: 0 10%;
 }
 
 .about-me__studies-uptc{
@@ -445,27 +444,32 @@ progress::-webkit-progress-bar{
 
 @media (max-width: 768px){
     h1{
-        font-size: 3rem;
-    }
-    
-    h2{
-        font-size: 2.7rem;
-    }
-    
-    h3 {
         font-size: 2.5rem;
     }
     
+    h2{
+        font-size: 2.2rem;
+    }
+    
+    h3 {
+        font-size: 2rem;
+    }
+    
     h4{
-        font-size: 2.3rem;
+        font-size: 1.8rem;
     }
     
     p{
-        font-size: 2.2rem;
+        font-size: 1.7rem;
+        line-height: 2.5rem;
     }
     
     a{
-        font-size: 2.2rem;
+        font-size: 1.7rem;
+    }
+
+    li{
+        font-size: 1.7rem;
     }
 
     .title-presentation{
@@ -493,6 +497,7 @@ progress::-webkit-progress-bar{
     .studies-platzi{
         display: flex;
         padding: 0;
+        width: 100%;
     }
 
     .studies-mintic{
@@ -532,5 +537,9 @@ progress::-webkit-progress-bar{
         justify-content: center;
         width: 100%;
     
+    }
+
+    .about-me-titles{
+        font-size: 3rem;
     }
 }
