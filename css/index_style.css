@@ -63,7 +63,7 @@ li{
 }
 
 .no-line-height{
-    line-height: 2.5rem;
+    line-height: 2.7rem;
 }
 
 .center-text{
@@ -541,5 +541,9 @@ progress::-webkit-progress-bar{
 
     .about-me-titles{
         font-size: 3rem;
+    }
+
+    .header-options__links{
+        font-size: 2.5rem;
     }
 }
