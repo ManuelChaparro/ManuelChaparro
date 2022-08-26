@@ -348,10 +348,6 @@ main{
     border-top: 2px solid rgba(14, 16, 61, .15);
 }
 
-.technologies-container__description{
-
-}
-
 .technologies-container__info{
     display: flex;
     flex-direction: column;
